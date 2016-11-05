@@ -1,6 +1,15 @@
+####Husk at skift til develop branch og lav features derfra gutter  :D
+
 # CharonFront
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
+This is a Frontend project for the Course Contract-based Development at cphbusiness. 
+
+In this project 2 groups work together to create a Ferry reservation system, one group developing the frontend the other the backend. The 2 groups have agreed upon a Contract (represented by an interface, DTO's and ETO's) which to follow to make a complete system.
+
+The Contract is a Java maven project at : `https://github.com/groenborg/Contract.git`
+The Contract is set up to build on jenkins running on DigitalOcean.    
+When succesfully build jenkins will push needed artifacts to an Artifactory running on DigitalOcean so it's available for both groups.    
+
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -26,6 +35,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 Run `ng github-pages:deploy` to deploy to Github Pages.
 
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
