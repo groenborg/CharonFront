@@ -2,17 +2,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { PageNotFoundComponent } from './page-not-found.component';
+import { TestComponent } from './test.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      // TODO: Below path's main purpose, is to demonstrate functionality
+      { path: '', component: TestComponent },
+      { path: '**', component: PageNotFoundComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
