@@ -34,7 +34,7 @@ The implementation of our Router is noted below
 
 ######Import statement in app.module.ts so we can use the module:
 ```typescript
-import { RouterModule } from '@angular/router';
+**import { RouterModule } from '@angular/router';**
 ```
 
 ######RouterModule is included in the imports attribute in same file (app.module.ts):
@@ -43,10 +43,10 @@ imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
+    **RouterModule.forRoot([
       { path: '', component: TestComponent },
       { path: '**', component: PageNotFoundComponent }
-    ])
+    ])**
   ],
 ```
 
@@ -57,7 +57,7 @@ imports: [
 </h1>
 
 <!-- Routed views goes here -->
-<router-outlet></router-outlet>
+**<router-outlet></router-outlet>**
 ```
 
 Source: https://angular.io/docs/ts/latest/guide/router.html
