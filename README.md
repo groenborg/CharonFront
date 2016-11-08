@@ -30,7 +30,7 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 
 The implementation of our Router is noted below
 
-**Note: test.component.ts is just for demonstration usage and is configures to be on the root path --> '/'**
+**Note: test.component.ts is just for demonstration usage and is configured to be on the root path --> '/'**
 
 ######Import statement in app.module.ts so we can use the module:
 ```typescript
