@@ -26,6 +26,42 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 Run `ng github-pages:deploy` to deploy to Github Pages.
 
+## About the Router
+
+The implementation of our Router is noted below
+
+**Note: test.component.ts is just for demonstration usage and is configured to be on the root path --> '/'**
+
+######Import statement in app.module.ts so we can use the module:
+```typescript
+import { RouterModule } from '@angular/router';
+```
+
+######RouterModule is included in the imports attribute in same file (app.module.ts):
+```typescript
+imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot([
+      { path: '', component: TestComponent },
+      { path: '**', component: PageNotFoundComponent }
+    ])
+  ],
+```
+
+######Router-outlet tag used in app.component.html, which is the root element's html:
+```typescript
+<h1>
+  {{title}}
+</h1>
+
+<!-- Routed views goes here -->
+<router-outlet></router-outlet>
+```
+
+Source: https://angular.io/docs/ts/latest/guide/router.html
+
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
