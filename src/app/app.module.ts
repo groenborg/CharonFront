@@ -7,12 +7,14 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 import { TestComponent } from './test.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    TestComponent
+    TestComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

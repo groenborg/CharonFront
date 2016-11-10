@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
     <h1>
       You have navigated to '/'
     </h1>
+    
   `,
   styles: []
 })
