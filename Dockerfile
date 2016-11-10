@@ -1,20 +1,16 @@
-FROM node:7
+FROM python:2.7.12-slim
 MAINTAINER groenborg
 
-RUN apt-get update
 
-ENV FE_SERVER_PORT 4200
+ENV SERVER_PORT 4200
 ENV INSTALL_PATH /home/app
 
 WORKDIR $INSTALL_PATH
 
-ADD . .
+ADD ./dist .
 
-RUN npm install -g angular-cli && npm cache clean
-RUN npm install
-RUN ng build -prod
 
-EXPOSE $FE_SERVER_PORT
+EXPOSE $SERVER_PORT
 
 ENTRYPOINT ["/bin/bash","-c"]
-CMD ["ng serve -prod --host 0.0.0.0 --port 4200"]
+CMD ["python -m SimpleHTTPServer 4200"]
