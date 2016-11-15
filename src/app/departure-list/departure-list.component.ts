@@ -13,6 +13,8 @@ export class DepartureListComponent implements OnInit {
   label: string;
   allDepartures: Departure[] = DEPARTURES;
   start: number = 0;
+  //TODO: Could later be annotated with @Output, so the containing component, will get
+  //TODO:  a notification whenever a schedule has been selected. (search for ng2 Eventemitter)
   selectedDepartureIndex: number;
   displayedDepartures: Departure[];
   listSize: number = 8;
@@ -23,6 +25,7 @@ export class DepartureListComponent implements OnInit {
     this.updateDisplayedDepartures();
   }
 
+  //TODO: Will contain the emitting function-call from the @Output attribute
   onSelect(index: number){
     this.selectedDepartureIndex = index;
   }

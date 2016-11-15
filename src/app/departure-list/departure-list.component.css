@@ -9,6 +9,8 @@
   display: table-cell;*/
   background-color: #f2f2f2;
   border: none;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .schedule-card:hover{
@@ -32,6 +34,8 @@
   display: table-cell;*/
   background-color: #a8a9a9;
   border:none;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .schedule-nav:hover{
