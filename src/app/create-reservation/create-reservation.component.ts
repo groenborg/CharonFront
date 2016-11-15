@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <p>
       create-reservation Works!
     </p>
-    <schedule-list></schedule-list>
+    <departure-list></departure-list>
   `,
   styles: []
 })
