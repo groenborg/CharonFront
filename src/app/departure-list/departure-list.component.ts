@@ -40,6 +40,7 @@ export class DepartureListComponent implements OnInit {
   nextDepartures(){
     if(this.start + 1 <= this.allDepartures.length - this.listSize){
       this.start = this.start + 1;
+      this.selectedDepartureIndex--;
       this.updateDisplayedDepartures();
     }
   }
@@ -47,6 +48,7 @@ export class DepartureListComponent implements OnInit {
   previousDepartues(){
     if(this.start - 1 >= 0){
       this.start = this.start - 1;
+      this.selectedDepartureIndex++;
       this.updateDisplayedDepartures();
     }
   }

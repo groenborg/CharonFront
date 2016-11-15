@@ -1,0 +1,52 @@
+.schedule-card{
+  width: 90px;
+  height: 90px;
+  /*display: table-cell;
+  vertical-align: middle;*/
+  font-family: Arial;
+  text-align: center;
+  /*vertical-align: middle;
+  display: table-cell;*/
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.schedule-card:hover{
+  background-color: #e1e1e1;
+  cursor: pointer;
+  border: none;
+}
+
+
+.selected-card, .selected-card:hover{
+  border-bottom: 10px solid #33b679;
+  background-color: #f2f2f2;
+}
+
+.schedule-nav{
+  width: 50px;
+  height: 90px;
+  font-family: Arial;
+  text-align: center;
+  /*vertical-align: middle;
+  display: table-cell;*/
+  background-color: #a8a9a9;
+  border:none;
+}
+
+.schedule-nav:hover{
+  background-color: #575858;
+  cursor: pointer;
+  border: none;
+}
+
+.schedule-nav:active{
+  background-color: #a8a9a9;
+  border:none;
+}
+
+.pagination>li>a, .pagination>li>span{
+  color: #575858;
+}
+
+

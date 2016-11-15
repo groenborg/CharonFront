@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <p>
       create-reservation markup goes here!
     </p>
-    <departure-list></departure-list>
+    <departure-list [label]="'Single-trip'"></departure-list>
   `,
   styles: []
 })
