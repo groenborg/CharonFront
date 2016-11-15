@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-12 col-lg-12">
+
+    <h3>{{ label }}</h3>
+
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li>
+          <a class="schedule-nav" aria-label="Previous" (click)="previousDepartues()">
+            <br>
+            <span class="glyphicon glyphicon-chevron-left" style="color:white;"></span>
+          </a>
+        </li>
+
+        <li><a *ngFor="let departure of displayedDepartures; let i = index;" [class.selected-card]="i === selectedDepartureIndex" (click)="onSelect(i)" class="schedule-card" aria-label="Next">
+          <p style="font-size: 90%; padding: 0; margin: 0;">ETD</p>
+          <p style="font-size: 120%; padding: 0; margin-bottom: 4px; font-weight: bold;">{{ departure.time | date: 'HH:mm'}}</p>
+          <p style="font-size: 70%; padding: 0; margin: 0;">ETA</p>
+          <p style="font-size: 70%; padding: 0; margin: 0;">10:10</p>
+        </a></li>
+
+        <li>
+          <a class="schedule-nav" aria-label="Next" (click)="nextDepartures()">
+            <br>
+            <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</div>
