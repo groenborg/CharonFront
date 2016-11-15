@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 import { TestComponent } from './test.component';
 import { HeaderComponent } from './header/header.component';
+import { CreateReservationComponent } from './create-reservation/create-reservation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     TestComponent,
-    HeaderComponent
+    HeaderComponent,
+    CreateReservationComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +25,7 @@ import { HeaderComponent } from './header/header.component';
     RouterModule.forRoot([
       // TODO: Below path's main purpose, is to demonstrate functionality
       { path: '', component: TestComponent },
+      { path: 'create-reservation', component: CreateReservationComponent },
       { path: '**', component: PageNotFoundComponent }
     ])
   ],
