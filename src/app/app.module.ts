@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
 import { TestComponent } from './test.component';
 import { HeaderComponent } from './header/header.component';
 import { CreateReservationComponent } from './create-reservation/create-reservation.component';
+import { ScheduleListComponent } from './schedule-list/schedule-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CreateReservationComponent } from './create-reservation/create-reservat
     PageNotFoundComponent,
     TestComponent,
     HeaderComponent,
-    CreateReservationComponent
+    CreateReservationComponent,
+    ScheduleListComponent
   ],
   imports: [
     BrowserModule,

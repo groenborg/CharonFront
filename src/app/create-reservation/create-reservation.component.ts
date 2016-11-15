@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-create-reservation',
+  selector: 'create-reservation',
   template: `
     <p>
       create-reservation Works!
     </p>
+    <schedule-list></schedule-list>
   `,
   styles: []
 })
