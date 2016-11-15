@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'create-reservation',
   template: `
     <p>
-      create-reservation Works!
+      create-reservation markup goes here!
     </p>
     <departure-list></departure-list>
   `,
