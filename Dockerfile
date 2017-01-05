@@ -6,9 +6,9 @@ ENV INSTALL_PATH /home/app
 
 WORKDIR $INSTALL_PATH
 
-ADD ./dist .
-
 EXPOSE $SERVER_PORT
+
+COPY ./dist .
 
 ENTRYPOINT ["/bin/bash","-c"]
 CMD ["python -m SimpleHTTPServer 4200"]

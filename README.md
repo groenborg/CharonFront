@@ -1,6 +1,22 @@
 # CharonFront
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
+##CI pipeline
+
+The tool we used for our pipelines on our web application 
+[CharonFront](https://github.com/groenborg/CharonFront) and our backend application [CharonBack](https://github.com/groenborg/CharonFront) was a system  called [distelli](https://www.distelli.com). Distelli not only supports the basic CI functionality, such as building your apps and running your tests for verification, it has a complete system deploying your applications on connected servers, pushing finished builds to your private registries or public. It natively works with docker. 
+
+
+###Build setup
+**It works like this:** 
+Push to develop branch>> 
+GitHub triggers build on distelli >> 
+builds >> run tests >> create docker image >> 
+pushes image to our [dockerhub](https://hub.docker.com/r/groenborg/charon-frontend/) >> 
+deploys container on digital ocean server >>
+sends notification on slack 
+
+###Contract
+The contract uses Jenkins, and artifactory for build artifacts. Theses artifacts are managed dependencies in our projects, which our build/dep tool [gradle](https://gradle.org) manages. 
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
